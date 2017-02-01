@@ -7,9 +7,9 @@
 
 # 1. 
 rm(list=ls())
-train <- read.table("UCI HAR Dataset/train/X_train.txt", header=F, sep = "")
+X_train <- read.table("UCI HAR Dataset/train/X_train.txt", header=F, sep = "")
 train <- cbind(train, read.table("UCI HAR Dataset/train/subject_train.txt"), read.table("UCI HAR Dataset/train/y_train.txt"))
-test <- read.table("UCI HAR Dataset/test/X_test.txt", header=F, sep = "")
+X_test <- read.table("UCI HAR Dataset/test/X_test.txt", header=F, sep = "")
 test <- cbind(test, read.table("UCI HAR Dataset/test/subject_test.txt"), read.table("UCI HAR Dataset/test/y_test.txt"))
 data <- rbind(train, test)
 
