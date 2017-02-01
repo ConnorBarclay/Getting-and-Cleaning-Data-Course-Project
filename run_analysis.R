@@ -34,6 +34,6 @@ colnames(data) <- features
 data2 <- lapply(X=labels, FUN=function(x) tapply(data[[x]], list(data$activity, data$subject), mean))
 names(data2) <- labels
 
-write.table(data2, file = "Tidy.txt", row.names = FALSE)              
+write.table(data2, file = "tidy_data.txt", row.names = FALSE)              
                    
                    
